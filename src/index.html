@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Game Interface -->
+    <div class="question-class" id="question-text"></div>
+    <div class="question-class" id="question-subtext"></div>
+
+    <!-- Input for User Guess -->
+    <input type="number" id="guess-input" class="guess-input" min="1" max="10" placeholder="Enter your guess">
+
+    <!-- Buttons for Actions -->
+    <div class="buttons">
+        <button class="btn-accept" onclick="sendButton()">Send</button>
+        <button class="btn-new-game" onclick="ngButton()">New Game</button>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="custom-alert" id="custom-alert">
+        <div class="alert-content">
+            <span class="close-alert">&times;</span>
+            <p id="alert-message"></p>
+            <button class="btn-alert">OK</button>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/customAlert.js"></script>=
+<script src="js/main.js"></script>
+
+</body>
+</html>
