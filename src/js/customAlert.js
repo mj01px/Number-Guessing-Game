@@ -1,3 +1,12 @@
+// Speak text function to read out the game instructions
+function speakText(text) {
+    const voiceEnabled = localStorage.getItem("voiceEnabled");
+
+    if (voiceEnabled === "true") {
+        responsiveVoice.speak(text);
+    }
+}
+
 // Custom alert functions
 function showAlert(message) {
     const alert = document.getElementById('custom-alert');
@@ -5,8 +14,12 @@ function showAlert(message) {
 
     alertMessage.textContent = message;
     alert.style.display = 'flex';
+
+    // Speak the alert message
+    speakText(message);
 }
 
+// Function to hide the custom alert
 function hideAlert() {
     document.getElementById('custom-alert').style.display = 'none';
 }

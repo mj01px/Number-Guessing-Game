@@ -6,10 +6,22 @@ function displayGameInfo(tag, text) {
     let camp = document.querySelector(tag);
     camp.innerHTML = text;
 }
-
+// Game information
 displayGameInfo('#question-text', 'Find out the Number');
 displayGameInfo('#question-subtext', 'I thought of a number between 0 and 10. Can you guess it?');
 
+// Speak text function to read out the game instructions
+function speakText(text) {
+    const voiceEnabled = localStorage.getItem("voiceEnabled");
+
+    if (voiceEnabled === "true") {
+        responsiveVoice.speak(text);
+    }
+}
+
+speakText("Find out the Number. I thought of a number between 0 and 10. Can you guess it?");
+
+// Function of button click
 function sendButton() {
     // Get the input value
     let input = document.querySelector('input').value;
@@ -24,7 +36,7 @@ function sendButton() {
 
     // Check if the input is a valid number
     if (input < 0 || input > 10) {
-        showAlert('Please enter a number between 0 and 10!');
+        showAlert('Please enter a number between 0 and 10!')
         return;
     }
 
@@ -51,7 +63,6 @@ function ngButton() {
     showAlert('New game started! Try to guess the new number.');
     //clear the input field
     document.querySelector('input').value = '';
-
 }
 
 // Reload to index page
