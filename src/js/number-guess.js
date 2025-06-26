@@ -1,4 +1,4 @@
-let randomNumber = 4
+let randomNumber = Math.floor(Math.random() * 10) + 1; // Generate a random number between 1 and 10
 let attempts = 1;
 
 // Function to show an alert message
