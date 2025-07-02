@@ -1,4 +1,4 @@
-# Find the Number
+# Number Guessing Game
 
 A simple web game where the player tries to guess a random number between 1 and 10. Built with pure HTML, CSS, and JavaScript.
 
