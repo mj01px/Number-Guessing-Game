@@ -1,0 +1,9 @@
+# JetBrains
+.idea/
+*.iml
+
+# Outros exemplos úteis
+node_modules/
+dist/
+.env
+.DS_Store
