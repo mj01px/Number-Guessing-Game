@@ -68,7 +68,7 @@ function ngButton() {
 // Reload to index page
 function ReloadToIndex() {
     if (performance.getEntriesByType("navigation")[0].type == "reload") {
-        window.location.href = "http://localhost:63342/guessing-number-game/find-out-the-number/src/index.html";
+        window.location.href = '../index.html';
     }
 }
 

@@ -13,7 +13,7 @@ function askVoicePreference() {
 
 // Redirect to the number guessing game page
 function startGame() {
-    window.location.href = "http://localhost:63342/guessing-number-game/find-out-the-number/src/web/number-guess.html";
+    window.location.href = 'web/game.html';
 }
 
 // Game information
