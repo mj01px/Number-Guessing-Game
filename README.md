@@ -22,6 +22,3 @@ A simple web game where the player tries to guess a random number between 1 and 
 2. Get hints if the guess is too high or too low
 3. Keep guessing until you find the correct number
 4. Click "Play Again" to restart
-
-## Project Structure
-
